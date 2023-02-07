@@ -28,10 +28,20 @@
   </head>
   <body>
     <div class="index_container">
-      <div class="index_logo"><img src="./image/logo.png" alt="" /></div>
-      <div class="index_video up_animation">
+      <div class="alertBox alertBox_in opacity0">
+        <div class="alertBox_content">
+          <p>Dear <span class="alertBox_name">貴賓</span> 您好</p>
+          <p>為確保您的體驗品質，建議您</p>
+          <p>「開啟裝置的音量」與「使用耳機」</p>
+          <p>瀏覽本頁</p>
+        </div>
+        <button id="start" class="alertBox_button">確認</button>
+      </div>
+      <div class="index_logo"><img src="./image/logo_.svg" alt="" /></div>
+      <div class="index_video opacity0">
         <div class="video opacity0">
-          <iframe
+          <div id="player"></div>
+          <!-- <iframe
             width="675"
             height="380"
             src="https://www.youtube.com/embed/NfntnA9QVro?autoplay=1"
@@ -40,22 +50,23 @@
             allow="autoplay"
             allowfullscreen
             autoplay="1"
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
       <div class="index_content opacity0">
         <div class="index_contentCircle"></div>
         <div class="index_mainContent">
           <div class="content_dear opacity0">Dear</div>
-          <h1 class="content_name opacity0">賴麒宇</h1>
+          <h1 class="content_name opacity0">貴賓</h1>
           <div class="content_wish opacity0">祝您生日快樂！希望您的旅途充滿歡笑與美好回憶，生日這天更多一份快樂與幸福！願您生活更加美好！</div>
+          <div class="index_happy opacity0">
+            Happy <br />
+            Birthday
+          </div>
         </div>
       </div>
-      <div class="index_happy opacity0">
-        Happy <br />
-        Birthday
-      </div>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/nameList.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
