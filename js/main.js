@@ -1,3 +1,7 @@
+import nameList from "./nameList.json" assert { type: "json" };
+
+console.log(nameList);
+
 let up = document.querySelector(".index_video");
 let down = document.querySelector(".index_content");
 let video = document.querySelector(".video");
